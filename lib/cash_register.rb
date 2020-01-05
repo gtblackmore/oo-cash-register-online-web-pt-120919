@@ -14,7 +14,9 @@ class CashRegister
   end
   
   def apply_discount
-    
+    discount = @total * employee_discount
+    puts "After the discount, total comes to $800."
+    @total = @total - dicount
   end 
   
   def items
