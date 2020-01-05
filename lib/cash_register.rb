@@ -13,7 +13,7 @@ class CashRegister
   end
   
   def add_item(tile, price, quantity=0)
-    @items = 
+    
   end
   
   def apply_discount
