@@ -14,11 +14,13 @@ class CashRegister
   end
   
   def apply_discount
-    discount = (@total * @discount/100)
-    @total = @total - discount
-    return "After the discount, the total comes to $#{@total}."
-    
-   
+    if CashRegister.new.include?(employee_discount)
+      discount = (@total * @discount/100)
+      @total = @total - discount
+      return "After the discount, the total comes to $#{@total}."
+    else
+      return "There is no discount to apply."
+    end
   end 
   
   def items
