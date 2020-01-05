@@ -6,11 +6,10 @@ class CashRegister
     @total = 0
     @items = []
     @discount = employee_discount
-    
-    
   end
   
   def total
+    
   end
   
   def add_item
