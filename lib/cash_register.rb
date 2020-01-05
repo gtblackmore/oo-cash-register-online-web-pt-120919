@@ -8,12 +8,8 @@ class CashRegister
     @discount = employee_discount
   end
   
-  def total
-    @total = total
-  end
-  
   def add_item(tile, price, quantity=0)
-    total += quantity * price
+    @total += quantity * price
     @items << title
   end
   
